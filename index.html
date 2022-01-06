@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         http-equiv="X-UA-Compatible"
+         content="IE=edge"
+      />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+      <title>Wavy</title>
+      <link
+         rel="preconnect"
+         href="https://fonts.googleapis.com"
+      />
+      <link
+         rel="preconnect"
+         href="https://fonts.gstatic.com"
+         crossorigin
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+         rel="stylesheet"
+      />
+
+      <style>
+         body {
+            margin: 0;
+            font-family: "Permanent Marker",
+               cursive;
+            color: white;
+            background: #12130f;
+            overflow-x: hidden;
+         }
+         section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+            background: #12130f;
+         }
+         .tan {
+            background: #e1ca96;
+         }
+         .sage {
+            background: #aca885;
+         }
+         .grullo {
+            background: #918b76;
+         }
+         .dark {
+            background: #6a6b83;
+         }
+         .curve {
+            position: absolute;
+            height: 250px;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+         }
+         .curve::before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            transform: translate(85%, 60%);
+            background-color: #12130f;
+         }
+         .curve::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #e1ca96;
+            transform: translate(-4%, 40%);
+            z-index: 1;
+         }
+         .bubble::after {
+            content: "";
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+            position: absolute;
+            bottom: 0;
+            height: 85%;
+            width: 100%;
+            background-color: #6a6b83;
+         }
+         .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+         }
+
+         .wave svg {
+            position: relative;
+            display: block;
+            width: calc(144% + 1.3px);
+            height: 278px;
+         }
+
+         .wave .shape-fill {
+            fill: #6a6b83;
+         }
+      </style>
+   </head>
+   <body>
+      <section class="tan">
+         <h1>Nice Curves</h1>
+         <p>
+            Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+            Placeat, repellendus ipsum qui quas
+            architecto possimus eius expedita
+            culpa dolore perspiciatis eveniet, id
+            provident eos accusamus reprehenderit,
+            nostrum voluptatibus vel iure.
+         </p>
+         <div class="curve"></div>
+      </section>
+      <section class="">
+         <h1>Nice Curves</h1>
+         <p>
+            Neque nobis earum fuga deleniti optio
+            commodi explicabo aliquam hic natus
+            nam in amet veritatis soluta fugit
+            odit omnis voluptatibus provident,
+            accusantium doloremque autem quasi sed
+            accusamus illum distinctio? Nemo.
+         </p>
+      </section>
+      <section class="bubble">
+         <h1>Nice Curves</h1>
+         <p>
+            Cum qui laudantium repellendus beatae
+            atque eaque voluptatibus molestias
+            unde corporis error. Ipsum earum
+            dignissimos deserunt impedit
+            perspiciatis, modi ducimus eaque,
+            animi et deleniti maiores inventore
+            minima nostrum? Deserunt, omnis!
+         </p>
+      </section>
+      <section class="dark">
+         <h1>Nice Curves</h1>
+         <p>
+            Ea hic repudiandae eaque omnis ab
+            dignissimos commodi perferendis
+            quisquam similique. Perspiciatis vitae
+            explicabo voluptatum officiis officia,
+            mollitia est suscipit accusamus
+            nesciunt odit adipisci dolores
+            dolorem, minus rerum! Eos, assumenda.
+         </p>
+      </section>
+      <section class="tan">
+         <h1>Nice Curves</h1>
+         <p>
+            Quasi consectetur dolorem dignissimos
+            odio, non dolor at magnam delectus
+            cupiditate voluptatum obcaecati. Id
+            corrupti molestiae aliquid, aut,
+            laboriosam perspiciatis dolorum fugiat
+            aliquam nam facere dolorem animi harum
+            ullam autem?
+         </p>
+         <div class="wave">
+            <svg
+               data-name="Layer 1"
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 1200 120"
+               preserveAspectRatio="none"
+            >
+               <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"
+               ></path>
+            </svg>
+         </div>
+      </section>
+      <section class="sage">
+         <h1>Nice Curves</h1>
+         <p>
+            Id accusantium ratione alias fugit
+            sapiente veritatis incidunt
+            repellendus pariatur assumenda quo
+            eaque ipsa, enim dolorem a, suscipit
+            voluptatibus eligendi corrupti hic
+            impedit quis natus? Itaque fuga ut
+            repudiandae ad?
+         </p>
+      </section>
+      <section class="grullo">
+         <h1>Nice Curves</h1>
+         <p>
+            Doloribus quidem nobis, consequatur
+            animi officia reiciendis officiis,
+            dolore a vel impedit rerum laborum
+            quo! Dolore reprehenderit sequi vitae
+            quas rem consectetur quibusdam
+            quaerat? Quos omnis quae officiis
+            dolorum sed.
+         </p>
+      </section>
+      <section class="dark">
+         <h1>Nice Curves</h1>
+         <p>
+            Similique rerum officia consectetur
+            fugit optio provident excepturi,
+            ullam, tempore aspernatur quas quae
+            consequatur iure numquam doloribus
+            libero corrupti. Nam minus quisquam
+            pariatur perspiciatis ab odit nemo
+            maiores quia expedita.
+         </p>
+      </section>
+   </body>
+</html>
